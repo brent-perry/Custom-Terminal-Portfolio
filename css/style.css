@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #00ff00;
+}
+
+a:hover {
+    opacity: .6;
+}
+
+html {
+    background-color: #000;
+    padding: 2em;
+}
+
+output {
+    white-space: pre-wrap;
+    display: block;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+input {
+    font:inherit;
+    color:inherit;
+    background:#0f02;
+    padding: .2em;
+    padding-top: .5em;
+    margin-top: 1em;
+    border: none;
+    display: block;
+    width: 100%;
+    border-top: solid 1px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.terminal {
+    font-family: monospace;
+    letter-spacing: .15em;
+    font-size: 2em;
+}
+
+input::before {
+    display: inline;
+    content: "$ ";
+}
+
+@media only screen and (max-width: 830px) {
+    .terminal {
+        font-size: 1.5em;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .terminal {
+        font-size: 1.2em;
+    }
+  }
+
+  @media only screen and (max-width: 499px) {
+    .terminal {
+        font-size: 1em;
+    }
+    html {
+        padding: 1em;
+    }
+  }
